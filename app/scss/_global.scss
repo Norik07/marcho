@@ -1,3 +1,11 @@
 body {
-  min-height: 100vh;
+  color: $default;
+  font-size: 16px;
+  line-height: 24px;
+  @extend %quicksand-500;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
