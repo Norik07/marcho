@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.29.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -24,8 +25,7 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
-    "slick-carousel": "^1.8.1",
     "sass": "^1.62.0",
-    "save-dev": "^0.0.1-security"
+    "slick-carousel": "^1.8.1"
   }
 }
