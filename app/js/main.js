@@ -1,4 +1,15 @@
 $(function () {
+  $(".select-style").styler();
+
+  $(".filter-price__input").ionRangeSlider({
+    type: "double",
+    prefix: "$",
+    onChange: function (data) {
+      $(".filter-price__from").text(data.from);
+      $(".filter-price__to").text(data.to);
+    },
+  });
+
   $(".top-slider__inner").slick({
     dots: true,
     arrows: false,
