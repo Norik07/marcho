@@ -122,12 +122,16 @@
     margin-bottom: 14px;
     display: block;
   }
+  &__form {
+    display: flex;
+  }
   &__text {
     margin-bottom: 25px;
   }
   &__form-input {
     background-color: #fff;
     max-width: 320px;
+    margin-right: 10px;
     width: 100%;
     border: none;
     padding: 12px 10px 12px 15px;
