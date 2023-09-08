@@ -81,7 +81,7 @@ function scripts() {
 }
 
 function styles() {
-  return src("app/**/*.scss")
+  return src("app/scss/*.scss")
     .pipe(scss({ outputStyle: "compressed" }))
     .pipe(rename({ suffix: ".min" }))
     .pipe(autoprefixer({ overrideBrowserlist: ["last 10 version"] }))
@@ -89,11 +89,7 @@ function styles() {
     .pipe(browserSync.stream());
 }
 function watching() {
-  browserSync.init({
-    server: {
-      baseDir: "app/",
-    },
-  });
+  browserSync.init({ server: { baseDir: "app/" } });
   watch(["app/**/*.scss"], styles);
   watch(["app/*.njk"], nunjucks);
   watch(["app/images/src"], images);

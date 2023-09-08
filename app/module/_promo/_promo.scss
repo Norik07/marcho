@@ -48,3 +48,46 @@
     margin-top: 55px;
   }
 }
+
+@media (max-width: 1200px) {
+  .promo {
+    background-position: left top;
+  }
+}
+
+@media (max-width: 620px) {
+  .promo {
+    background-position: top left;
+    padding: 60px 0;
+    &__clock {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__clock-item {
+      margin: 20px 35px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .promo {
+    background-position: top left;
+    width: 100%;
+
+    margin-top: 30px;
+    &__clock {
+    }
+    &__clock-item {
+      margin: 8px;
+    }
+    &__link {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .promo {
+    background-position: top left;
+  }
+}
